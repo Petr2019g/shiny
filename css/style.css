@@ -1,0 +1,232 @@
+.body {
+margin: 0;
+border-radius: 0;
+}
+
+.head {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+
+.logo{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.naming {
+  color:gray;
+  font-size: 50px;
+  margin: 0 50px 0 100px;
+}
+
+.telephone {
+  color: gray;
+  font-size: 20px;
+  margin: 0 10px 0 10px;
+}
+
+.city {
+  color: gray;
+  font-size: 20px;
+  margin-right: 100px;
+}
+
+
+.container-one {
+ width:100%;
+ height: 45vh;
+ background-color: cornflowerblue;
+}
+
+.container-two {
+  width:100%;
+  height: 45vh;
+  background-color: rgb(155, 237, 100);
+ }
+
+ .container-three {
+  width:100%;
+  height: 45vh;
+  background-color: rgb(233, 151, 130);
+ }
+
+ .container-four {
+  width:100%;
+  height: 45vh;
+  background-color: rgb(132, 152, 245);
+ }
+
+ .container-five {
+  width:100%;
+  height: 45vh;
+  background-color: rgb(36, 27, 43);
+ }
+
+.container-four {
+  /* display:flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: auto;
+}
+
+.uslugi__head {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 30px;
+  /* padding: auto; */
+  /* background-color: aqua; */
+  height: 70px;
+  width:300px;
+  /* text-align: center; */
+  /* vertical-align:bottom; */
+  /* align-items: center; */
+}
+
+.uslugi__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 20px;
+  /* padding: auto; */
+  /* background-color: aqua; */
+  height: 30px;
+  width:300px;
+}
+
+.pop-uslugi {
+  display: flex;
+  /* flex: 0 0 33.333%; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  /* padding: 100px; */
+  margin-top: 20px;
+}
+
+.item {
+  flex-basis: 30.0%;
+  display: block;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  height: 300px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  width: 200px;
+  /* height: 40px; */
+  list-style: none;
+  background: #383c54;
+  position: relative;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  /* padding: 0 10px; */
+  line-height: 40px;
+  transition: all .5s;
+}
+
+.menu a:hover {
+  background: #808291;
+}
+
+.menu ul {
+  position: absolute;
+  /* left: 0; */
+  /* top: 100%; */
+  display: none;
+  padding: 0;
+}
+
+.menu li:hover ul{
+  display: block;
+  /* transition: all .5s; */
+}
+
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+
+.checkbox label::before{
+  content: "";
+  display: inline-block;
+  
+  height: 16px;
+  width: 16px;
+  
+  border: 1px solid;   
+}
+
+
+.checkbox label::after {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 9px;
+    /* border-left: 2px solid;
+    border-bottom: 2px solid;
+    
+    transform: rotate(-45deg); */
+}
+
+.checkbox label {
+  position: relative;
+ 
+}
+.checkbox label::before, 
+.checkbox label::after {
+  position: absolute;
+  
+}
+/*Внешний блок*/
+.checkbox label::before {
+  top: 0px;
+  left: -20px;
+}
+/*Галка*/
+.checkbox label::after {
+  left: -17px;
+  top: -2px;
+}
+
+/*Прячем галку по умолчанию*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+/*Показываем галку по состоянию checked*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: '✔';
+}
+
+/*Добавляем фокус к внешнему блоку поддельного чекбокса*/
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+.checkbox__text {
+margin-left: 30px;
+}
